@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #10375C;
+    --blue-color: #2E80CE;
+    --bg-color: #F6FBFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: Sens, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
