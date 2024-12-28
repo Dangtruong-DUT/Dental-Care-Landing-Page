@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -19,4 +20,138 @@ html {
 
 body {
     font-size: 1.6rem;
+}
+
+/* ==== Common ==== */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: (100% -48px);
+    margin: 0 auto;
+}
+.btn {
+    --height: 60px;
+    color: #FFF;
+    background-color: var(--blue-color);
+    height: var(--height);
+    padding: 0 20px;
+    display: inline-block;
+    border-radius: 30px;
+    line-height: var(--height);
+    min-width: 205px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* ==== Header ====== */
+
+.header {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.logo {
+    display: inline-flex;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.logo__circle::after,
+.logo__circle::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background-color: var(--blue-color);
+}
+
+.logo__circle::after {
+    position: absolute;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+    top: 1.1em;
+    left: 1.1em;
+}
+
+.logo__text {
+    color: #FFF;
+    margin-left: 0.6em;
+    text-align: right;
+    line-height: 1.6em;
+}
+
+.logo__branch {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__branch:last-child {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+
+/* === header top ===== */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item {
+    position: relative;
+}
+
+.action__btn-login,
+.navbar__link {
+    color: #C9D2DA;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 175%;
+    padding: 4px 21px;
+}
+
+.navbar__link:hover,
+.navbar__item--active .navbar__link {
+    color: #FFF;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__item--active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #FFF;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+
+.action__btn-signup {
+    --height:44px;
+    min-width: 104px;
 }
