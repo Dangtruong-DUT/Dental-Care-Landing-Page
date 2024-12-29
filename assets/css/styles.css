@@ -53,6 +53,22 @@ a {
     opacity: 0.9;
 }
 
+.section__heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.section__desc {
+    margin-top: 18px;
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 166.667%;
+}
+
 /* ==== Header ====== */
 
 .header {
@@ -134,6 +150,7 @@ a {
     font-weight: 300;
     line-height: 175%;
     padding: 4px 21px;
+    transition: all ease-out 0.29s;
 }
 
 .header-action__btn-login:hover,
@@ -240,4 +257,88 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* ==== Service ===== */
+
+.service {
+    padding: 170px 0;
+}
+
+.service__heading ,
+.service__desc {
+    text-align :center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service__desc {
+    max-width: 468px;
+}
+
+.service-row{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px ;
+    object-fit: cover;
+}
+
+.service-item{
+    display: flex;
+    width: 470px;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 21px 22px;
+    transition: all ease-out 0.29s;
+}
+.service-item__body {
+    flex: 1;
+    margin-left: 19px;
+}
+.service-item__heading {
+    color: #10375C;
+    font-size: 1.8;
+    font-weight: 600;
+    line-height: 1.27;
+}
+.service-item__desc {
+    margin-top: 8px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height:  175% ;
+}
+.service-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: #eff6fd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    color: #10375C;
+}
+
+.service-item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.service-item:hover
+.service-item__icon {
+    color: #fff;
+    background: #2E80CE;
+    box-shadow: 0 8px 16px rgba(40, 155, 222, 0.149);
+}
+
+.service__list {
+    margin-bottom: 55px;
 }
