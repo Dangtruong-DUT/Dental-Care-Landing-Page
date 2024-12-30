@@ -14,7 +14,7 @@ body {
 }
 
 html {
-    font-family: Sens, sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 62.5%;
 }
 
@@ -465,4 +465,52 @@ a {
 
 .feature-cta {
     margin-top: 38px;
+}
+
+/* ==== Install === */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    border-radius: 4px;
+    background: #2E80CE;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.install__img {
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+    display: block;
+}
+
+.install__content {
+    width: 57%;
+    color: #fff;
+}
+
+.install__heading,
+.instal__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.instal__desc {
+    font-weight: 300;
+    max-width: 586px;
+}
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
+}
+.install__btn {
+    background-color: transparent;
 }
